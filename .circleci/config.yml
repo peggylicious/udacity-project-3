@@ -4,7 +4,11 @@ jobs:
   build:
     docker:
       - image: cimg/node:12.22.12
+    machine:
     steps:
       - checkout
-      - run: node --version
+      - run: 
+             name: Build docker images
+             command: |
+                      node --version
 
