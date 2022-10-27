@@ -23,7 +23,7 @@ jobs:
                       echo "------- Start tagging images ---------"
                       docker tag udagram-api-feed peggylicious/udagram-api-feed:v2
                       docker tag udagram-api-user peggylicious/udagram-api-user:v2
-                      docker tag udagram-api-frontend peggylicious/udagram-frontend:v2
+                      docker tag udagram-frontend peggylicious/udagram-frontend:v2
                       docker tag udagram-reverseproxy peggylicious/udagram-reverseproxy:v2
 
                       echo "------- Log in to docker hub ---------"
