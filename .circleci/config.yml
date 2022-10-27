@@ -25,7 +25,7 @@ jobs:
 
                       echo "------- Log in to docker hub ---------"
 
-                      echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+                      echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
 
                       docker push peggylicious/udagram-api-feed:v1
                       docker push peggylicious/udagram-api-user:v1
